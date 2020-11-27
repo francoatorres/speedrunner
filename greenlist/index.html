@@ -1,0 +1,348 @@
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenlist - Green Revolution. It’s a team effort</title>
+    <link rel="stylesheet" href="compiled.css">
+    <link rel="stylesheet" href="flic.css">
+    <style>
+        @font-face {
+            font-family: "GT";
+            src: url(./GT.woff) format("woff");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .gt {
+            font-family: gt;
+        }
+
+        body {
+            color: white;
+        }
+
+        .hero {
+            background: #023A15;
+        }
+
+        .hero-darker {
+            background: #033313;
+        }
+
+        .r {
+            color: #F09C96;
+        }
+
+        .cta {
+            color: #023A15;
+        }
+
+        .weird {
+            stroke: #F09C96;
+            stroke-width: 3;
+        }
+
+        .pink {
+            background: #F09C96;
+        }
+
+        .menu--hidden {
+            display: none;
+        }
+
+        .hero-c {
+            background: #034419;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="hero text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+                <div class="relative pt-6 px-8 lg:px-10">
+                    <nav class="relative flex items-center justify-between sm:h-10 lg:justify-start"
+                        aria-label="Global">
+                        <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+                            <div class="flex items-center justify-between w-full md:w-auto">
+                                <a class="gt text-xl tracking-wide" href="#">
+                                    Vivero
+                                </a>
+                                <div class="-mr-2 flex items-center md:hidden act">
+                                    <button type="button" class="rounded-md" p-2="" inline-flex="" items-centerf=""
+                                        justify-center="" text-gray-400="" hover:text-gray-500="" hover:bg-gray-100=""
+                                        focus:outline-none="" focus:ring-2="" focus:ring-inset=""
+                                        focus:ring-indigo-500"="" id="main-menu" aria-haspopup="true">
+                                        <span class="sr-only">Open main menu</span>
+                                        <!-- Heroicon name: menu -->
+                                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M4 6h16M4 12h16M4 18h16"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+                            <a href="#" class="font-medium hover:opacity-80">Inicio</a>
+                            <a href="#" class="font-medium hover:opacity-80">Sobre nosotros</a>
+                            <a href="#" class="font-medium hover:opacity-80">Dónde encontrarnos</a>
+                        </div>
+                    </nav>
+                </div>
+
+                <!--
+          Mobile menu, show/hide based on menu open state.
+  
+          Entering: "duration-150 ease-out"
+            From: "opacity-0 scale-95"
+            To: "opacity-100 scale-100"
+          Leaving: "duration-100 ease-in"
+            From: "opacity-100 scale-100"
+            To: "opacity-0 scale-95"
+        -->
+                <div
+                    class="menu menu--hidden absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+                    <div class="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                        <div class="px-5 pt-4 flex items-center justify-between">
+                            <div>
+                                <img class="h-8 w-auto"
+                                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="">
+                            </div>
+                            <div class="-mr-2 closs">
+                                <button type="button"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                                    <span class="sr-only">Cerrar menu principal</span>
+                                    <!-- Heroicon name: x -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+                            <div class="px-2 pt-2 pb-3 space-y-1" role="none">
+                                <a href="#"
+                                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                                    role="menuitem">Sobre nosotros</a>
+                                <a href="#"
+                                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                                    role="menuitem">Dónde encontrarnos</a>
+                            </div>
+                            <div role="none">
+                                <a href="#"
+                                    class="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                                    role="menuitem">
+                                    Log in
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <main class="mt-10 mx-auto max-w-7xl px-8 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+                    <div class="max-w-xl">
+                        <h1 class="gt text-6xl tracking-tight font-bold sm:text-7xl md:text-8xl lg:text-8xl">
+                            <span class="block xl:inline">Más verde</span>
+                            <span class="block">más <span class="r">energía</span></span>
+                        </h1>
+                        <div
+                            class="cta mt-9 bg-white cursor-pointer inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-md md:py-3 md:text-lg md:px-8">
+                            Hablemos
+                        </div>
+                        <p class="mt-9 text-xs w-58">Descubre precios, ofertas y más</p>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+            <div
+                class="mb-10 sm:mb-12 sm:px-6 md:mb-16 lg:mb-20 px-8 lg:px-0 lg:pd-x lg:w-full lg:h-full lg:flex items-center justify-center">
+                <div class="main-carousel lg:w-full">
+                    <div class="carousel-cell mr-4">
+                        <div class="plant w-24 h-24 lg:w-32 lg:h-32 p-2 rounded-full hero-c">
+                            <img src="./plants-png-1.png" alt="Planta">
+                        </div>
+                    </div>
+                    <div class="carousel-cell mr-4">
+                        <div class="plant w-24 h-24 lg:w-32 lg:h-32 p-2 rounded-full hero-c">
+                            <img src="./plants-png-1.png" alt="Planta">
+                        </div>
+                    </div>
+                    <div class="carousel-cell mr-4">
+                        <div class="plant w-24 h-24 lg:w-32 lg:h-32 p-2 rounded-full hero-c">
+                            <img src="./plants-png-1.png" alt="Planta">
+                        </div>
+                    </div>
+                    <div class="carousel-cell mr-4">
+                        <div class="plant w-24 h-24 lg:w-32 lg:h-32 p-2 rounded-full hero-c">
+                            <img src="./plants-png-1.png" alt="Planta">
+                        </div>
+                    </div>
+                    <div class="carousel-cell mr-4">
+                        <div class="plant w-24 h-24 lg:w-32 lg:h-32 p-2 rounded-full hero-c">
+                            <img src="./plants-png-1.png" alt="Planta">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menu = document.querySelector(".menu");
+        const button = document.querySelector(".act");
+        const closed = document.querySelector(".closs");
+
+        console.log(menu);
+        button.addEventListener("click", () => {
+            menu.classList.toggle("menu--hidden")
+        });
+
+        closed.addEventListener("click", () => {
+            menu.classList.toggle("menu--hidden")
+        })
+
+    </script>
+    <script src="flic.js"></script>
+    <script>
+        var flkty = new Flickity('.main-carousel', {
+            prevNextButtons: false,
+            pageDots: false,
+            pauseAutoPlayOnHover: false,
+            autoPlay: 1000,
+            freeScroll: true,
+            lazyLoad: 1,
+        });
+    </script>
+
+    <section>
+        <div class="text-black max-w-7xl mx-auto flex px-5 my-12 lg:pb-24 md:flex-row flex-col items-center">
+            <div class="mb-10 md:mb-0">
+                <img class="object-cover object-center rounded" alt="hero" src="local.png">
+            </div>
+            <div
+                class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h2 class="gt title-font sm:text-6xl text-5xl mb-4">Somos un pequeño local
+                </h2>
+                <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+                    plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot
+                    chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative max-w-7xl mx-auto">
+        <div class="flex flex-wrap items-center justify-center lg:flex-col md:px-10 mx-auto my-16 px-8 sm:flex-no-wrap">
+            <h2 class="gt text-black text-center self-center title-font sm:text-6xl text-5xl mb-4">Contactanos
+            </h2>
+            <div
+                class="bg-gray-300 flex items-end justify-start overflow-hidden p-10 relative rounded-lg sm:mr-10 text-gray-700 w-full">
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
+                    marginwidth="0" scrolling="no"
+                    src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                    style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+                <div class="bg-white flex flex-wrap items-center py-6 relative">
+                    <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm uppercase">Dirección
+                        </h2>
+                        <p class="leading-relaxed">Av.</p>
+                    </div>
+                    <div class="lg:mt-0 lg:w-1/2 mt-4 px-6">
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm uppercase">Correo
+                            electronico</h2>
+                        <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+                        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mt-4">Teléfono</h2>
+                        <p class="leading-relaxed">123-456-7890</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white flex flex-col md:mt-0 md:py-8 mt-8 w-full">
+                <h2 class="text-gray-900 text-lg mb-2 font-medium title-font">Contactanos</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo
+                    fashion axe</p>
+                <div class="relative mb-4">
+                    <label for="name" class="leading-7 text-sm text-gray-600">Nombre</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-gray-600">Correo electrónico</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="message" class="leading-7 text-sm text-gray-600">Mensaje</label>
+                    <textarea id="message" name="message"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button
+                    class="border-0 focus:outline-none hero hover:bg-white hover:text-black inline-flex px-6 py-2 rounded self-start text-lg text-white">Button</button>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="hero">
+        <div
+            class="max-w-7xl mx-auto py-12 px-8 lg:px-10 sm:px-6 lg:py-16 text-center lg:flex lg:items-center lg:justify-between">
+            <h2 class="gt text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tightwhite">
+                <span class="block">Qué esperas?</span>
+                <span class="block r">Hablemos ahora.</span>
+            </h2>
+            <div
+                class="cta mt-9 bg-white cursor-pointer inline-flex items-center justify-center px-3 py-2 border border-transparent text-base font-medium rounded-md md:py-3 md:text-lg md:px-8">
+                Hablemos
+            </div>
+        </div>
+    </div>
+    <footer class="text-white hero-darker body-font">
+        <div class="py-12 px-8 lg:px-10 sm:px-6 lg:py-16 text-center flex items-center sm:flex-row flex-col">
+            <a class="gt text-xl tracking-wide" href="#">
+                Vivero
+            </a>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-white">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-white">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-white">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-white">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>

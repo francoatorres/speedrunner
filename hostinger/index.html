@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="compiled.css">
+</head>
+
+<body>
+    <!-- From 19:52 -->
+    <!--
+        Mobile menu, show/hide based on menu open state.
+
+        Entering: "duration-150 ease-out"
+          From: "opacity-0 scale-95"
+          To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+          From: "opacity-100 scale-100"
+          To: "opacity-0 scale-95"
+      -->
+    <!-- <div class="absolute top-0 inset-x-0 py-2 transition transform origin-top-right md:hidden">
+  <div class="bg-white overflow-hidden">
+    <div class="px-5 pt-4 flex items-center justify-end">
+      <div class="-mr-2">
+        <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+          <span class="sr-only">Close main menu</span>
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+      <div class="pt-2 pb-3 space-y-1 divide-y" role="none">
+        <a href="#" class="block px-3 py-2 text-base font-medium text-black hover:text-indigo-700" role="menuitem">Tienda Online</a>
+
+        <a href="#" class="block px-3 py-2 text-base font-medium text-black hover:text-indigo-700" role="menuitem">Creador de Sitios</a>
+
+        <a href="#" class="block px-3 py-2 text-base font-medium text-black hover:text-indigo-700" role="menuitem">VPS</a>
+
+        <a href="#" class="block px-3 py-2 text-base font-medium text-black hover:text-indigo-700" role="menuitem">Dominio</a>
+
+        <a href="#" class="block px-3 py-2 text-base font-medium text-black hover:text-indigo-700" role="menuitem">Precios</a>
+      </div>
+      <div role="none">
+        <a href="#" class="mx-4 flex items-center justify-center px-5 py-3 font-medium text-indigo-600 border-2 border-indigo-500 rounded-3xl transition hover:bg-indigo-500 hover:text-white" role="menuitem">
+          <svg class="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+          Log in
+        </a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+    <div class="p-4 sm:px-8 pb-16 md:px-12 bg-dark text-white">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-5">
+                <svg data-v-d95ab4c8="" width="100" height="20" viewBox="0 0 100 20" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg" class="d-block d-sm-none">
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M30.0743 5.93215H31.9502V14.2408H30.0743V10.7159H26.9238V14.2408H25.0479V5.93215H26.9238V9.10915H30.0743V5.93215Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M36.3299 10.0806C36.3299 10.488 36.3799 10.8557 36.4801 11.1834C36.5803 11.5114 36.7247 11.793 36.9132 12.0287C37.1012 12.2648 37.3319 12.4464 37.6046 12.5741C37.877 12.7024 38.1896 12.7664 38.5425 12.7664C38.887 12.7664 39.1977 12.7024 39.4745 12.5741C39.7508 12.4464 39.9835 12.2648 40.1716 12.0287C40.3599 11.793 40.5045 11.5114 40.6047 11.1834C40.705 10.8557 40.7551 10.488 40.7551 10.0806C40.7551 9.67273 40.705 9.30306 40.6047 8.97127C40.5045 8.63966 40.3599 8.35616 40.1716 8.12011C39.9835 7.88439 39.7508 7.70232 39.4745 7.57474C39.1977 7.44682 38.887 7.38294 38.5425 7.38294C38.1896 7.38294 37.877 7.44883 37.6046 7.5806C37.3319 7.71255 37.1012 7.89646 36.9132 8.13234C36.7247 8.36806 36.5803 8.65173 36.4801 8.98334C36.3799 9.31529 36.3299 9.68094 36.3299 10.0806ZM42.6913 10.0807C42.6913 10.7918 42.5848 11.4175 42.3728 11.9567C42.1601 12.4964 41.8694 12.948 41.5008 13.3115C41.1321 13.6755 40.6931 13.9491 40.1841 14.1328C39.6751 14.3169 39.1278 14.4088 38.5429 14.4088C37.9736 14.4088 37.4367 14.3169 36.9316 14.1328C36.4265 13.9491 35.9855 13.6755 35.6088 13.3115C35.2318 12.948 34.9356 12.4964 34.719 11.9567C34.5026 11.4175 34.3942 10.7918 34.3942 10.0807C34.3942 9.36916 34.5065 8.74365 34.731 8.20431C34.9553 7.66464 35.2581 7.21098 35.6389 6.84332C36.0194 6.47566 36.4605 6.20004 36.9617 6.01612C37.4624 5.83204 37.9897 5.74 38.5429 5.74C39.1119 5.74 39.6489 5.83204 40.1542 6.01612C40.6591 6.20004 41.1 6.47566 41.4768 6.84332C41.8534 7.21098 42.1502 7.66464 42.3666 8.20431C42.5831 8.74365 42.6913 9.36916 42.6913 10.0807Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M47.4082 12.8141C47.6727 12.8141 47.8911 12.7923 48.0635 12.7481C48.2358 12.7043 48.3742 12.6445 48.4783 12.568C48.5823 12.4924 48.6546 12.4025 48.6948 12.2986C48.735 12.1948 48.755 12.0788 48.755 11.9509C48.755 11.6793 48.6266 11.4531 48.3701 11.2736C48.1136 11.0935 47.6727 10.8999 47.0475 10.6917C46.7748 10.5961 46.5023 10.486 46.2297 10.3622C45.9571 10.2385 45.7127 10.0826 45.4963 9.89465C45.28 9.70688 45.1035 9.47904 44.9673 9.21097C44.8309 8.94339 44.7628 8.61781 44.7628 8.23406C44.7628 7.8503 44.835 7.50461 44.9792 7.19697C45.1237 6.88916 45.328 6.62762 45.5926 6.41152C45.8571 6.19558 46.1776 6.03011 46.5544 5.91393C46.9312 5.79825 47.3559 5.73991 47.8291 5.73991C48.3902 5.73991 48.8752 5.80026 49.2842 5.91996C49.6927 6.03984 50.0295 6.17194 50.294 6.31579L49.7531 7.79045C49.5204 7.67058 49.2618 7.56463 48.9775 7.47259C48.6928 7.38088 48.3501 7.33461 47.9495 7.33461C47.5003 7.33461 47.1777 7.39697 46.9813 7.5207C46.7849 7.6446 46.6865 7.83455 46.6865 8.09005C46.6865 8.24211 46.7229 8.37019 46.795 8.4738C46.867 8.57774 46.9694 8.67163 47.1015 8.75562C47.2338 8.83945 47.3862 8.91556 47.5587 8.98329C47.7307 9.05136 47.9212 9.1211 48.1299 9.19303C48.5625 9.35313 48.9393 9.51089 49.2601 9.66681C49.5806 9.82273 49.8473 10.0046 50.0598 10.2123C50.272 10.4201 50.4304 10.664 50.5348 10.9438C50.6387 11.2238 50.691 11.5633 50.691 11.9626C50.691 12.738 50.4183 13.3396 49.8732 13.7671C49.328 14.1949 48.5063 14.4088 47.4082 14.4088C47.0395 14.4088 46.7067 14.3867 46.4101 14.3428C46.1135 14.2985 45.8511 14.2447 45.6225 14.1808C45.3942 14.117 45.1977 14.0491 45.0332 13.9771C44.8689 13.905 44.7307 13.8373 44.6184 13.7731L45.1477 12.2865C45.3959 12.4227 45.7026 12.5444 46.0676 12.652C46.4321 12.7602 46.8792 12.8141 47.4082 12.8141Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M58.9551 5.93219V7.52689H56.4419V14.2408H54.5661V7.52689H52.0527V5.93219H58.9551Z"></path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M61.0386 14.241H62.9145V5.93223H61.0386V14.241Z"></path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M71.3115 14.2409C70.7745 13.2898 70.1934 12.3508 69.5679 11.4233C68.9424 10.496 68.2771 9.62088 67.5719 8.79755V14.2409H65.72V5.93221H67.247C67.5113 6.19576 67.8041 6.51949 68.1249 6.90325C68.4455 7.287 68.7719 7.69674 69.1048 8.1323C69.4374 8.56786 69.7681 9.01952 70.0969 9.48693C70.4254 9.95451 70.7341 10.404 71.0228 10.8357V5.93221H72.8867V14.2409H71.3115Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M79.7557 7.37094C78.8824 7.37094 78.2509 7.61269 77.862 8.0962C77.4732 8.57987 77.279 9.24109 77.279 10.0807C77.279 10.4879 77.3269 10.8579 77.4231 11.1895C77.5195 11.521 77.6637 11.8067 77.8559 12.0466C78.0486 12.2865 78.2889 12.4724 78.5776 12.6043C78.8661 12.7361 79.2026 12.802 79.5874 12.802C79.7958 12.802 79.9743 12.798 80.1228 12.7901C80.2709 12.7822 80.4012 12.7663 80.5134 12.7422V9.85285H82.3893V13.9652C82.1647 14.0532 81.8042 14.1469 81.307 14.2467C80.8101 14.3464 80.1968 14.3967 79.4672 14.3967C78.8421 14.3967 78.2747 14.3006 77.766 14.109C77.2567 13.9169 76.8218 13.6374 76.461 13.2696C76.1007 12.9021 75.8219 12.4503 75.6255 11.9148C75.4288 11.3797 75.3309 10.7681 75.3309 10.0807C75.3309 9.3851 75.4392 8.76965 75.6558 8.23401C75.872 7.69869 76.1683 7.24469 76.5454 6.87318C76.9222 6.50149 77.3649 6.21984 77.8741 6.02805C78.383 5.83608 78.9261 5.73985 79.5034 5.73985C79.8961 5.73985 80.2507 5.76617 80.5675 5.81798C80.8841 5.87012 81.1565 5.92997 81.385 5.99804C81.6137 6.06577 81.8022 6.13568 81.9505 6.20777C82.099 6.27969 82.2047 6.33585 82.2691 6.37576L81.728 7.87423C81.4713 7.73843 81.1767 7.62074 80.8443 7.52065C80.5114 7.42073 80.1488 7.37094 79.7557 7.37094Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M85.0142 14.2409V5.93221H90.6417V7.50277H86.8899V9.13318H90.2208V10.668H86.8899V12.6703H90.9184V14.2409H85.0142Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M95.7309 7.43079C95.5946 7.43079 95.4727 7.43482 95.3643 7.4427C95.2563 7.45091 95.154 7.45896 95.0577 7.46667V9.72058H95.5868C96.2919 9.72058 96.797 9.63307 97.1014 9.45703C97.4062 9.2815 97.5583 8.98157 97.5583 8.55775C97.5583 8.15002 97.404 7.86065 97.0954 7.68831C96.7868 7.5168 96.332 7.43079 95.7309 7.43079ZM95.6233 5.83609C96.8739 5.83609 97.8316 6.05773 98.497 6.5015C99.1623 6.94511 99.4952 7.63449 99.4952 8.56982C99.4952 9.15308 99.3611 9.62703 99.0924 9.99067C98.824 10.3541 98.4371 10.6401 97.932 10.8477C98.1005 11.0558 98.2767 11.2935 98.461 11.5612C98.6453 11.8291 98.8279 12.1089 99.0083 12.4007C99.1885 12.6924 99.3631 12.996 99.5314 13.3115C99.6995 13.6275 99.8559 13.9372 100 14.2408H97.9031C97.7501 13.969 97.5951 13.6934 97.4385 13.4136C97.2815 13.134 97.1209 12.862 96.9556 12.5982C96.7912 12.3343 96.6276 12.0848 96.467 11.8491C96.3058 11.613 96.1447 11.3993 95.9841 11.2071H95.058V14.2408H93.1824V6.05169C93.5911 5.97223 94.014 5.91589 94.4508 5.88421C94.8877 5.85202 95.2784 5.83609 95.6233 5.83609Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.000249566 9.36418V0.000497794L4.72619 2.52047V6.73926L10.9824 6.74227L15.785 9.36418H0.000249566ZM12.2616 5.96706V0L17.115 2.45727V8.78646L12.2616 5.96706ZM12.2616 17.4118V13.2294L5.9572 13.225C5.96308 13.2529 1.07489 10.5612 1.07489 10.5612L17.115 10.6365V20L12.2616 17.4118ZM0 17.4118L0.000168141 11.2928L4.72611 14.0455V19.8689L0 17.4118Z">
+                    </path>
+                </svg>
+                <div class="flex">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z">
+                        </path>
+                    </svg>
+                    <span>AR</span>
+                </div>
+            </div>
+            <div class="flex items-center space-x-5">
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="my-10 flex flex-col items-center text-center">
+            <span class="uppercase font-medium text-xl sm:text-2xl text-primary">Black Friday</span>
+            <h1 class="text-2xl sm:text-3xl font-bold">Hosting Web + Dominio Gratis</h1>
+            <p class="mt-3 text-base text-gray-200">Host con SSL y CloudFlare gratuito incluidos</p>
+            <span class="mt-6 block text-primary">Hasta</span>
+            <span
+                class="mt-1 font-bold block uppercase text-3xl text-primary border border-primary p-1 px-2 rounded-md">70%
+                off</span>
+            <div
+                class="mt-4 py-2 px-14 rounded-3xl font-medium cursor-pointer bg-blue-800 transition hover:bg-blue-700 uppercase text-sm tracking-wide">
+                Ver precios</div>
+        </div>
+
+        <div class="mt-20 flex flex-col items-center text-center">
+            <h2 class="text-2xl sm:text-3xl font-bold">Elegí tu plan de Alojamiento Web</h2>
+            <div class="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-blue-900 rounded-md flex flex-col justify-between">
+                    <div class="py-2 bg-primary text-white text-sm tracking-wide uppercase animate-bounce">Más vendido
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-medium">Hosting Sencillo</h3>
+                        <p class="mt-1">Solución ideal para principiantes</p>
+                        <div class="">
+                            <div class="mt-4 flex justify-center items-center space-x-4">
+                                <span class="text-gray-300 line-through text-sm">AR$ 399,00</span>
+                                <span
+                                    class="p-1 px-2 rounded-md text-primary border border-primary uppercase text-sm font-bold">Ahorrá
+                                    70%</span>
+                            </div>
+                            <p class="text-2xl font-medium mt-1 mb-6">AR$ <span class="text-4xl">159,00</span>/mes</p>
+                        </div>
+                        <div
+                            class="mt-4 py-2 px-14 rounded-3xl font-medium cursor-pointer bg-blue-800 transition hover:bg-blue-700 uppercase text-sm tracking-wide">
+                            Ver contenido</div>
+                        <p class="mt-4 text-sm text-gray-200">AR$ 599,00/mes al renovar</p>
+                    </div>
+                    <ul class="mt-4 uppercase text-xs tracking-wide">
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Número de sitios Ilimitado</p>
+                        </li>
+                        <li class="flex items-center bg-blue-700 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Cuentas de Correo Ilimitadas</p>
+                        </li>
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Ancho de banda Ilimitado</p>
+                        </li>
+                        <li class="flex items-center bg-blue-700 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Aceleración de WordPress (LSCWP)</p>
+                        </li>
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Certificado SSL y Dominio gratis</p>
+                        </li>
+                        <li class="flex items-center bg-blue-700 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Backups Diarios</p>
+                        </li>
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>4X Recursos Asignados</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-blue-900 rounded-md flex flex-col justify-between">
+                    <div class="p-5">
+                        <h3 class="font-medium">Hosting Sencillo</h3>
+                        <p class="mt-1">Solución ideal para principiantes</p>
+                        <div class="">
+                            <div class="mt-4 flex justify-center items-center space-x-4">
+                                <span class="text-gray-300 line-through text-sm">AR$ 399,00</span>
+                                <span
+                                    class="p-1 px-2 rounded-md text-primary border border-primary uppercase text-sm font-bold">Ahorrá
+                                    60%</span>
+                            </div>
+                            <p class="text-2xl font-medium mt-1 mb-6">AR$ <span class="text-4xl">159,00</span>/mes</p>
+                        </div>
+                        <div
+                            class="mt-4 py-2 px-14 rounded-3xl font-medium cursor-pointer bg-blue-800 transition hover:bg-blue-700 uppercase text-sm tracking-wide">
+                            Ver contenido</div>
+                        <p class="mt-4 text-sm text-gray-200">AR$ 599,00/mes al renovar</p>
+                    </div>
+                    <ul class="mt-4 uppercase text-xs tracking-wide">
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Número de sitios Ilimitado</p>
+                        </li>
+                        <li class="flex items-center bg-blue-700 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Cuentas de Correo Ilimitadas</p>
+                        </li>
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Ancho de banda Ilimitado</p>
+                        </li>
+                        <li class="flex items-center bg-blue-700 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Aceleración de WordPress (LSCWP)</p>
+                        </li>
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Certificado SSL y Dominio gratis</p>
+                        </li>
+                        <li class="flex items-center bg-blue-700 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Backups Diarios</p>
+                        </li>
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>4X Recursos Asignados</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-blue-900 rounded-md flex flex-col justify-between">
+                    <div class="p-5">
+                        <h3 class="font-medium">Hosting Sencillo</h3>
+                        <p class="mt-1">Solución ideal para principiantes</p>
+                        <div class="">
+                            <div class="mt-4 flex justify-center items-center space-x-4">
+                                <span class="text-gray-300 line-through text-sm">AR$ 399,00</span>
+                                <span
+                                    class="p-1 px-2 rounded-md text-primary border border-primary uppercase text-sm font-bold">Ahorrá
+                                    60%</span>
+                            </div>
+                            <p class="text-2xl font-medium mt-1 mb-6">AR$ <span class="text-4xl">159,00</span>/mes</p>
+                        </div>
+                        <div
+                            class="mt-4 py-2 px-14 rounded-3xl font-medium cursor-pointer bg-blue-800 transition hover:bg-blue-700 uppercase text-sm tracking-wide">
+                            Ver contenido</div>
+                        <p class="mt-4 text-sm text-gray-200">AR$ 599,00/mes al renovar</p>
+                    </div>
+                    <ul class="mt-4 uppercase text-xs tracking-wide">
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Número de sitios Ilimitado</p>
+                        </li>
+                        <li class="flex items-center bg-blue-700 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Cuentas de Correo Ilimitadas</p>
+                        </li>
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Ancho de banda Ilimitado</p>
+                        </li>
+                        <li class="flex items-center bg-blue-700 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Aceleración de WordPress (LSCWP)</p>
+                        </li>
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Certificado SSL y Dominio gratis</p>
+                        </li>
+                        <li class="flex items-center bg-blue-700 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>Backups Diarios</p>
+                        </li>
+                        <li class="flex items-center bg-blue-600 p-4">
+                            <svg class="mr-4 w-4 h-4 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <p>4X Recursos Asignados</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4 sm:px-8 md:px-12">
+        <div class="max-w-7xl mx-auto lg:flex text-center lg:text-left">
+            <div class="max-w-3xl mx-auto lg:mx-0">
+                <h2 class="text-3xl mt-24 font-bold">Web hosting de alta calidad</h2>
+                <p class="mt-2 max-w-xl mx-auto lg:mx-0">Necesitas un servicio de host web potente. La variedad de
+                    funciones premium optimizadas para brindar el mejor rendimiento harán que tus sitios web sean
+                    realmente veloces.</p>
+                <a
+                    class="inline-flex mx-auto lg:mx-0 items-center justify-center space-x-2 mt-2 text-blue-700 transition hover:text-blue-900 underline">
+                    <span> Ver más </span>
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </a>
+            </div>
+            <img class="mx-auto"
+                src="https://www.hostinger.com.ar/assets/images/web-hosting-2020/mobile-image-high-quality-website-hosting-258f3b46cc.png" />
+        </div>
+        <div class="max-w-7xl mx-auto lg:flex text-center lg:text-left">
+            <div class="max-w-3xl mx-auto lg:order-2">
+                <h2 class="text-3xl mt-24 font-bold">Web hosting de alta calidad</h2>
+                <p class="mt-2 max-w-xl mx-auto lg:mx-0">Necesitas un servicio de host web potente. La variedad de
+                    funciones premium optimizadas para brindar el mejor rendimiento harán que tus sitios web sean
+                    realmente veloces.</p>
+                <a
+                    class="inline-flex mx-auto lg:mx-0 items-center justify-center space-x-2 mt-2 text-blue-700 transition hover:text-blue-900 underline">
+                    <span> Ver más </span>
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </a>
+            </div>
+            <img class="mx-auto"
+                src="https://www.hostinger.com.ar/assets/images/web-hosting-2020/mobile-image-high-quality-website-hosting-258f3b46cc.png" />
+        </div>
+        <div class="max-w-7xl mx-auto lg:flex text-center lg:text-left">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl mt-24 font-bold">Web hosting de alta calidad</h2>
+                <p class="mt-2 max-w-xl mx-auto lg:mx-0">Necesitas un servicio de host web potente. La variedad de
+                    funciones premium optimizadas para brindar el mejor rendimiento harán que tus sitios web sean
+                    realmente veloces.</p>
+                <a
+                    class="inline-flex mx-auto lg:mx-0 items-center justify-center space-x-2 mt-2 text-blue-700 transition hover:text-blue-900 underline">
+                    <span> Ver más </span>
+                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </a>
+            </div>
+            <img class="mx-auto"
+                src="https://www.hostinger.com.ar/assets/images/web-hosting-2020/mobile-image-high-quality-website-hosting-258f3b46cc.png" />
+        </div>
+    </div>
+
+    <div class="p-4 sm:px-8 md:px-12 mt-14 bg-gray-50">
+        <h2 class="text-3xl font-bold sm:text-4xl text-center max-w-3xl text-text-primary mx-auto">¿Buscas más potencia?
+            Probá Cloud Hosting</h2>
+        <div
+            class="mt-7 py-2 px-14 rounded-3xl font-medium cursor-pointer transition bg-primary-light text-white table mx-auto hover:bg-purple-700 uppercase text-sm tracking-wide">
+            Ver precios</div>
+    </div>
+
+    <div class="p-4 sm:px-8 md:px-12 mt-14">
+        <h2 class="text-3xl font-bold sm:text-4xl text-center max-w-3xl text-text-primary mx-auto">Todo lo que necesitás
+            para el éxito en línea</h2>
+    </div>
+    <!-- Carousel -->
+    <div class="">CAROUSEL</div>
+
+    <div class="p-4 sm:px-8 md:px-12 mt-14 bg-gray-50">
+        <h2 class="text-3xl font-bold sm:text-4xl text-center max-w-3xl text-text-primary mx-auto">30 días de garantía
+            de devolución del dinero</h2>
+        <p class="mt-4 max-w-xl mx-auto text-gray-800 text-center">Si no te sentís satisfecho con nuestros servicios,
+            cualquiera sea el motivo, te haremos un reembolso de tu dinero. Sin riesgos ni inconvenientes.</p>
+        <div
+            class="mt-7 py-2 px-14 rounded-3xl font-medium cursor-pointer transition bg-primary-light text-white table mx-auto hover:bg-purple-700 uppercase text-sm tracking-wide">
+            Empezá YA</div>
+        <a
+            class="table mx-auto items-center justify-center space-x-2 mt-4 text-blue-700 transition hover:text-blue-900 underline">
+            <span> Conocer más </span>
+            <svg class="w-4 h-4 inline" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="p-4 sm:px-8 md:px-12 mt-14">
+        <h2 class="text-3xl font-bold sm:text-4xl text-center max-w-3xl text-text-primary mx-auto">Preguntas comunes
+            sobre Hosting Compartido</h2>
+        <p class="mt-4 max-w-xl mx-auto text-gray-800 text-center">Encontrá respuestas a las preguntas frecuentes sobre
+            web hosting:</p>
+        <div class="space-y-8 mt-14">
+            <div class="p-8 shadow max-w-3xl mx-auto">
+                <h3 class="font-medium text-xl mt-4 text-text-primary">¿A qué se le llama web hosting?</h3>
+                <div class="mt-3 space-y-4">
+                    <p class="text-gray-800">Todo sitio web consta de un dominio y un hosting web. El dominio es como tu
+                        dirección y el hosting web como el edificio físico.</p>
+                    <p class="text-gray-800">Todo sitio web consta de un dominio y un hosting web. El dominio es como tu
+                        dirección y el hosting web como el edificio físico.</p>
+                    <p class="text-gray-800">Hostinger no tiene limitantes en cuanto a cambiar de un plan de alojamiento
+                        web a otro. Podés empezar con el plan Sencillo y posteriormente escalar al plan Empresarial, o
+                        incluso usar nuestro servicio de VPS.</p>
+                    <p class="text-gray-800">En la actualidad existen diferentes tipos de servicios de host web. Y
+                        Hostinger, como muchos otros proveedores, ofrece varias opciones de planes a sus clientes. De
+                        esta manera, nos aseguramos de que paguen solo lo que necesitan. Mientras más popular sea tu
+                        sitio web más recursos del servidor utilizará.</p>
+                </div>
+            </div>
+            <div class="p-8 shadow max-w-3xl mx-auto">
+                <h3 class="font-medium text-xl mt-4 text-text-primary">¿A qué se le llama web hosting?</h3>
+                <div class="mt-3 space-y-4">
+                    <p class="text-gray-800">Todo sitio web consta de un dominio y un hosting web. El dominio es como tu
+                        dirección y el hosting web como el edificio físico.</p>
+                    <p class="text-gray-800">Todo sitio web consta de un dominio y un hosting web. El dominio es como tu
+                        dirección y el hosting web como el edificio físico.</p>
+                    <p class="text-gray-800">Hostinger no tiene limitantes en cuanto a cambiar de un plan de alojamiento
+                        web a otro. Podés empezar con el plan Sencillo y posteriormente escalar al plan Empresarial, o
+                        incluso usar nuestro servicio de VPS.</p>
+                    <p class="text-gray-800">En la actualidad existen diferentes tipos de servicios de host web. Y
+                        Hostinger, como muchos otros proveedores, ofrece varias opciones de planes a sus clientes. De
+                        esta manera, nos aseguramos de que paguen solo lo que necesitan. Mientras más popular sea tu
+                        sitio web más recursos del servidor utilizará.</p>
+                </div>
+            </div>
+            <div class="p-8 shadow max-w-3xl mx-auto">
+                <h3 class="font-medium text-xl mt-4 text-text-primary">¿A qué se le llama web hosting?</h3>
+                <div class="mt-3 space-y-4">
+                    <p class="text-gray-800">Todo sitio web consta de un dominio y un hosting web. El dominio es como tu
+                        dirección y el hosting web como el edificio físico.</p>
+                    <p class="text-gray-800">Todo sitio web consta de un dominio y un hosting web. El dominio es como tu
+                        dirección y el hosting web como el edificio físico.</p>
+                    <p class="text-gray-800">Hostinger no tiene limitantes en cuanto a cambiar de un plan de alojamiento
+                        web a otro. Podés empezar con el plan Sencillo y posteriormente escalar al plan Empresarial, o
+                        incluso usar nuestro servicio de VPS.</p>
+                    <p class="text-gray-800">En la actualidad existen diferentes tipos de servicios de host web. Y
+                        Hostinger, como muchos otros proveedores, ofrece varias opciones de planes a sus clientes. De
+                        esta manera, nos aseguramos de que paguen solo lo que necesitan. Mientras más popular sea tu
+                        sitio web más recursos del servidor utilizará.</p>
+                </div>
+            </div>
+            <div class="p-8 shadow max-w-3xl mx-auto">
+                <h3 class="font-medium text-xl mt-4 text-text-primary">¿A qué se le llama web hosting?</h3>
+                <div class="mt-3 space-y-4">
+                    <p class="text-gray-800">Todo sitio web consta de un dominio y un hosting web. El dominio es como tu
+                        dirección y el hosting web como el edificio físico.</p>
+                    <p class="text-gray-800">Todo sitio web consta de un dominio y un hosting web. El dominio es como tu
+                        dirección y el hosting web como el edificio físico.</p>
+                    <p class="text-gray-800">Hostinger no tiene limitantes en cuanto a cambiar de un plan de alojamiento
+                        web a otro. Podés empezar con el plan Sencillo y posteriormente escalar al plan Empresarial, o
+                        incluso usar nuestro servicio de VPS.</p>
+                    <p class="text-gray-800">En la actualidad existen diferentes tipos de servicios de host web. Y
+                        Hostinger, como muchos otros proveedores, ofrece varias opciones de planes a sus clientes. De
+                        esta manera, nos aseguramos de que paguen solo lo que necesitan. Mientras más popular sea tu
+                        sitio web más recursos del servidor utilizará.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-10 mt-12 p-4 sm:px-8 md:px-12 bg-purple-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="">
+                <svg data-v-d95ab4c8="" width="100" height="20" viewBox="0 0 100 20" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg" class="d-block d-sm-none">
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M30.0743 5.93215H31.9502V14.2408H30.0743V10.7159H26.9238V14.2408H25.0479V5.93215H26.9238V9.10915H30.0743V5.93215Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M36.3299 10.0806C36.3299 10.488 36.3799 10.8557 36.4801 11.1834C36.5803 11.5114 36.7247 11.793 36.9132 12.0287C37.1012 12.2648 37.3319 12.4464 37.6046 12.5741C37.877 12.7024 38.1896 12.7664 38.5425 12.7664C38.887 12.7664 39.1977 12.7024 39.4745 12.5741C39.7508 12.4464 39.9835 12.2648 40.1716 12.0287C40.3599 11.793 40.5045 11.5114 40.6047 11.1834C40.705 10.8557 40.7551 10.488 40.7551 10.0806C40.7551 9.67273 40.705 9.30306 40.6047 8.97127C40.5045 8.63966 40.3599 8.35616 40.1716 8.12011C39.9835 7.88439 39.7508 7.70232 39.4745 7.57474C39.1977 7.44682 38.887 7.38294 38.5425 7.38294C38.1896 7.38294 37.877 7.44883 37.6046 7.5806C37.3319 7.71255 37.1012 7.89646 36.9132 8.13234C36.7247 8.36806 36.5803 8.65173 36.4801 8.98334C36.3799 9.31529 36.3299 9.68094 36.3299 10.0806ZM42.6913 10.0807C42.6913 10.7918 42.5848 11.4175 42.3728 11.9567C42.1601 12.4964 41.8694 12.948 41.5008 13.3115C41.1321 13.6755 40.6931 13.9491 40.1841 14.1328C39.6751 14.3169 39.1278 14.4088 38.5429 14.4088C37.9736 14.4088 37.4367 14.3169 36.9316 14.1328C36.4265 13.9491 35.9855 13.6755 35.6088 13.3115C35.2318 12.948 34.9356 12.4964 34.719 11.9567C34.5026 11.4175 34.3942 10.7918 34.3942 10.0807C34.3942 9.36916 34.5065 8.74365 34.731 8.20431C34.9553 7.66464 35.2581 7.21098 35.6389 6.84332C36.0194 6.47566 36.4605 6.20004 36.9617 6.01612C37.4624 5.83204 37.9897 5.74 38.5429 5.74C39.1119 5.74 39.6489 5.83204 40.1542 6.01612C40.6591 6.20004 41.1 6.47566 41.4768 6.84332C41.8534 7.21098 42.1502 7.66464 42.3666 8.20431C42.5831 8.74365 42.6913 9.36916 42.6913 10.0807Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M47.4082 12.8141C47.6727 12.8141 47.8911 12.7923 48.0635 12.7481C48.2358 12.7043 48.3742 12.6445 48.4783 12.568C48.5823 12.4924 48.6546 12.4025 48.6948 12.2986C48.735 12.1948 48.755 12.0788 48.755 11.9509C48.755 11.6793 48.6266 11.4531 48.3701 11.2736C48.1136 11.0935 47.6727 10.8999 47.0475 10.6917C46.7748 10.5961 46.5023 10.486 46.2297 10.3622C45.9571 10.2385 45.7127 10.0826 45.4963 9.89465C45.28 9.70688 45.1035 9.47904 44.9673 9.21097C44.8309 8.94339 44.7628 8.61781 44.7628 8.23406C44.7628 7.8503 44.835 7.50461 44.9792 7.19697C45.1237 6.88916 45.328 6.62762 45.5926 6.41152C45.8571 6.19558 46.1776 6.03011 46.5544 5.91393C46.9312 5.79825 47.3559 5.73991 47.8291 5.73991C48.3902 5.73991 48.8752 5.80026 49.2842 5.91996C49.6927 6.03984 50.0295 6.17194 50.294 6.31579L49.7531 7.79045C49.5204 7.67058 49.2618 7.56463 48.9775 7.47259C48.6928 7.38088 48.3501 7.33461 47.9495 7.33461C47.5003 7.33461 47.1777 7.39697 46.9813 7.5207C46.7849 7.6446 46.6865 7.83455 46.6865 8.09005C46.6865 8.24211 46.7229 8.37019 46.795 8.4738C46.867 8.57774 46.9694 8.67163 47.1015 8.75562C47.2338 8.83945 47.3862 8.91556 47.5587 8.98329C47.7307 9.05136 47.9212 9.1211 48.1299 9.19303C48.5625 9.35313 48.9393 9.51089 49.2601 9.66681C49.5806 9.82273 49.8473 10.0046 50.0598 10.2123C50.272 10.4201 50.4304 10.664 50.5348 10.9438C50.6387 11.2238 50.691 11.5633 50.691 11.9626C50.691 12.738 50.4183 13.3396 49.8732 13.7671C49.328 14.1949 48.5063 14.4088 47.4082 14.4088C47.0395 14.4088 46.7067 14.3867 46.4101 14.3428C46.1135 14.2985 45.8511 14.2447 45.6225 14.1808C45.3942 14.117 45.1977 14.0491 45.0332 13.9771C44.8689 13.905 44.7307 13.8373 44.6184 13.7731L45.1477 12.2865C45.3959 12.4227 45.7026 12.5444 46.0676 12.652C46.4321 12.7602 46.8792 12.8141 47.4082 12.8141Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M58.9551 5.93219V7.52689H56.4419V14.2408H54.5661V7.52689H52.0527V5.93219H58.9551Z"></path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M61.0386 14.241H62.9145V5.93223H61.0386V14.241Z"></path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M71.3115 14.2409C70.7745 13.2898 70.1934 12.3508 69.5679 11.4233C68.9424 10.496 68.2771 9.62088 67.5719 8.79755V14.2409H65.72V5.93221H67.247C67.5113 6.19576 67.8041 6.51949 68.1249 6.90325C68.4455 7.287 68.7719 7.69674 69.1048 8.1323C69.4374 8.56786 69.7681 9.01952 70.0969 9.48693C70.4254 9.95451 70.7341 10.404 71.0228 10.8357V5.93221H72.8867V14.2409H71.3115Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M79.7557 7.37094C78.8824 7.37094 78.2509 7.61269 77.862 8.0962C77.4732 8.57987 77.279 9.24109 77.279 10.0807C77.279 10.4879 77.3269 10.8579 77.4231 11.1895C77.5195 11.521 77.6637 11.8067 77.8559 12.0466C78.0486 12.2865 78.2889 12.4724 78.5776 12.6043C78.8661 12.7361 79.2026 12.802 79.5874 12.802C79.7958 12.802 79.9743 12.798 80.1228 12.7901C80.2709 12.7822 80.4012 12.7663 80.5134 12.7422V9.85285H82.3893V13.9652C82.1647 14.0532 81.8042 14.1469 81.307 14.2467C80.8101 14.3464 80.1968 14.3967 79.4672 14.3967C78.8421 14.3967 78.2747 14.3006 77.766 14.109C77.2567 13.9169 76.8218 13.6374 76.461 13.2696C76.1007 12.9021 75.8219 12.4503 75.6255 11.9148C75.4288 11.3797 75.3309 10.7681 75.3309 10.0807C75.3309 9.3851 75.4392 8.76965 75.6558 8.23401C75.872 7.69869 76.1683 7.24469 76.5454 6.87318C76.9222 6.50149 77.3649 6.21984 77.8741 6.02805C78.383 5.83608 78.9261 5.73985 79.5034 5.73985C79.8961 5.73985 80.2507 5.76617 80.5675 5.81798C80.8841 5.87012 81.1565 5.92997 81.385 5.99804C81.6137 6.06577 81.8022 6.13568 81.9505 6.20777C82.099 6.27969 82.2047 6.33585 82.2691 6.37576L81.728 7.87423C81.4713 7.73843 81.1767 7.62074 80.8443 7.52065C80.5114 7.42073 80.1488 7.37094 79.7557 7.37094Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M85.0142 14.2409V5.93221H90.6417V7.50277H86.8899V9.13318H90.2208V10.668H86.8899V12.6703H90.9184V14.2409H85.0142Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M95.7309 7.43079C95.5946 7.43079 95.4727 7.43482 95.3643 7.4427C95.2563 7.45091 95.154 7.45896 95.0577 7.46667V9.72058H95.5868C96.2919 9.72058 96.797 9.63307 97.1014 9.45703C97.4062 9.2815 97.5583 8.98157 97.5583 8.55775C97.5583 8.15002 97.404 7.86065 97.0954 7.68831C96.7868 7.5168 96.332 7.43079 95.7309 7.43079ZM95.6233 5.83609C96.8739 5.83609 97.8316 6.05773 98.497 6.5015C99.1623 6.94511 99.4952 7.63449 99.4952 8.56982C99.4952 9.15308 99.3611 9.62703 99.0924 9.99067C98.824 10.3541 98.4371 10.6401 97.932 10.8477C98.1005 11.0558 98.2767 11.2935 98.461 11.5612C98.6453 11.8291 98.8279 12.1089 99.0083 12.4007C99.1885 12.6924 99.3631 12.996 99.5314 13.3115C99.6995 13.6275 99.8559 13.9372 100 14.2408H97.9031C97.7501 13.969 97.5951 13.6934 97.4385 13.4136C97.2815 13.134 97.1209 12.862 96.9556 12.5982C96.7912 12.3343 96.6276 12.0848 96.467 11.8491C96.3058 11.613 96.1447 11.3993 95.9841 11.2071H95.058V14.2408H93.1824V6.05169C93.5911 5.97223 94.014 5.91589 94.4508 5.88421C94.8877 5.85202 95.2784 5.83609 95.6233 5.83609Z">
+                    </path>
+                    <path data-v-d95ab4c8="" fill-rule="evenodd" clip-rule="evenodd"
+                        d="M0.000249566 9.36418V0.000497794L4.72619 2.52047V6.73926L10.9824 6.74227L15.785 9.36418H0.000249566ZM12.2616 5.96706V0L17.115 2.45727V8.78646L12.2616 5.96706ZM12.2616 17.4118V13.2294L5.9572 13.225C5.96308 13.2529 1.07489 10.5612 1.07489 10.5612L17.115 10.6365V20L12.2616 17.4118ZM0 17.4118L0.000168141 11.2928L4.72611 14.0455V19.8689L0 17.4118Z">
+                    </path>
+                </svg>
+                <p class="text-gray-800 mt-4">Hostinger es el líder mundial de servicios hosting con millones de
+                    usuarios inteligentes, quienes realmente aman ahorrar sin perder características Premium al crear
+                    una página web. Proveemos servicios de hosting para Argentina como parte del grupo Hostinger.</p>
+                <div class="mt-5 space-y-2">
+                    <div class="flex">facebook y más</div>
+                    <div class="flex">Tarjetas de creidto y más</div>
+                </div>
+            </div>
+            <div class="mt-4 flex flex-wrap justify-between">
+                <ul class="space-y-2 p-3">
+                    <li class="mb-3">
+                        <p class="uppercase font-medium tracking-wide text-text-primary">Hosting</p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="transition hover:text-text-primary">Mejor Hosting Web</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="transition hover:text-text-primary">Mejor Hosting Web</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="space-y-2 p-3">
+                    <li class="mb-3">
+                        <p class="uppercase font-medium tracking-wide text-text-primary">Hosting</p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="transition hover:text-text-primary">Mejor Hosting Web</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="transition hover:text-text-primary">Mejor Hosting Web</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="space-y-2 p-3">
+                    <li class="mb-3">
+                        <p class="uppercase font-medium tracking-wide text-text-primary">Hosting</p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="transition hover:text-text-primary">Mejor Hosting Web</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="transition hover:text-text-primary">Mejor Hosting Web</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="space-y-2 p-3">
+                    <li class="mb-3">
+                        <p class="uppercase font-medium tracking-wide text-text-primary">Hosting</p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="transition hover:text-text-primary">Mejor Hosting Web</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="transition hover:text-text-primary">Mejor Hosting Web</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="space-y-2 p-3">
+                    <li class="mb-3">
+                        <p class="uppercase font-medium tracking-wide text-text-primary">Hosting</p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="transition hover:text-text-primary">Mejor Hosting Web</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a class="transition hover:text-text-primary">Mejor Hosting Web</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-center mx-auto max-w-xl text-gray-400 text-sm mt-12 pt-2 border-t">
+                <div>© 2004-2020 hostinger.com.ar - Hosting Premium para Argentina y Dominios baratos.</div>
+                <div>Los precios están listados sin VAT (IVA)</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
