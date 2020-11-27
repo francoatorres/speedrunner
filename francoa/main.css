@@ -1,0 +1,409 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Nunito;
+}
+
+input {
+  color: gray !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: gray !important;  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: gray !important;}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: gray !important;}
+
+.st0 {
+  fill: #444444;
+}
+
+.st1 {
+  fill: #444444;
+}
+
+.st2 {
+  enable-background: new;
+}
+
+.st3 {
+  clip-path: url(#SVGID_2_);
+  enable-background: new;
+}
+
+.st4 {
+  fill: #858585;
+}
+
+.st5 {
+  fill: #818181;
+}
+
+.st6 {
+  clip-path: url(#SVGID_4_);
+  enable-background: new;
+}
+
+.st7 {
+  fill: #787878;
+}
+
+.st8 {
+  clip-path: url(#SVGID_6_);
+  enable-background: new;
+}
+
+.st9 {
+  clip-path: url(#SVGID_8_);
+  enable-background: new;
+}
+
+.st10 {
+  clip-path: url(#SVGID_10_);
+  enable-background: new;
+}
+
+.st11 {
+  fill: #82402B;
+}
+
+.st12 {
+  clip-path: url(#SVGID_12_);
+  enable-background: new;
+}
+
+.st13 {
+  fill: #87432C;
+}
+
+.st14 {
+  fill: #8C452E;
+}
+
+.st15 {
+  fill: #914830;
+}
+
+.st16 {
+  clip-path: url(#SVGID_14_);
+  enable-background: new;
+}
+
+.st17 {
+  clip-path: url(#SVGID_16_);
+  enable-background: new;
+}
+
+.st18 {
+  clip-path: url(#SVGID_18_);
+  enable-background: new;
+}
+
+.st19 {
+  clip-path: url(#SVGID_20_);
+  enable-background: new;
+}
+
+.st20 {
+  fill: #825D2B;
+}
+
+.st21 {
+  clip-path: url(#SVGID_22_);
+  enable-background: new;
+}
+
+.st22 {
+  fill: #87602C;
+}
+
+.st23 {
+  fill: #8C642E;
+}
+
+.st24 {
+  fill: #916730;
+}
+
+.st25 {
+  clip-path: url(#SVGID_24_);
+  enable-background: new;
+}
+
+.st26 {
+  clip-path: url(#SVGID_26_);
+  enable-background: new;
+}
+
+.st27 {
+  clip-path: url(#SVGID_28_);
+  enable-background: new;
+}
+
+.st28 {
+  clip-path: url(#SVGID_30_);
+  enable-background: new;
+}
+
+.st29 {
+  fill: #3B6D33;
+}
+
+.st30 {
+  clip-path: url(#SVGID_32_);
+  enable-background: new;
+}
+
+.st31 {
+  fill: #3D7135;
+}
+
+.st32 {
+  fill: #3F7537;
+}
+
+.st33 {
+  fill: #427939;
+}
+
+.st34 {
+  clip-path: url(#SVGID_34_);
+  enable-background: new;
+}
+
+.st35 {
+  clip-path: url(#SVGID_36_);
+  enable-background: new;
+}
+
+.st36 {
+  clip-path: url(#SVGID_38_);
+  enable-background: new;
+}
+
+.st37 {
+  fill: #7A7A7A;
+}
+
+.st38 {
+  clip-path: url(#SVGID_40_);
+  enable-background: new;
+}
+
+.st39 {
+  clip-path: url(#SVGID_42_);
+  enable-background: new;
+}
+
+.st40 {
+  fill: #838383;
+}
+
+.st41 {
+  fill: #888888;
+}
+
+.st42 {
+  fill: #8D8D8D;
+}
+
+.st43 {
+  clip-path: url(#SVGID_44_);
+  enable-background: new;
+}
+
+.st44 {
+  clip-path: url(#SVGID_46_);
+  enable-background: new;
+}
+
+.st45 {
+  clip-path: url(#SVGID_48_);
+  enable-background: new;
+}
+
+.st46 {
+  fill: #7E7E7E;
+}
+
+.st47 {
+  fill: #989898;
+}
+
+.st48 {
+  clip-path: url(#SVGID_50_);
+  enable-background: new;
+}
+
+.st49 {
+  fill: #525252;
+}
+
+.st50 {
+  fill: #F2784F;
+}
+
+.st51 {
+  fill: #F2AC4F;
+}
+
+.st52 {
+  fill: #6DCA60;
+}
+
+.st53 {
+  fill: #6c6c6c;
+}
+
+.st54 {
+  clip-path: url(#SVGID_52_);
+  enable-background: new;
+}
+
+.st55 {
+  clip-path: url(#SVGID_54_);
+  enable-background: new;
+}
+
+.st56 {
+  clip-path: url(#SVGID_56_);
+  enable-background: new;
+}
+
+.st57 {
+  clip-path: url(#SVGID_58_);
+  enable-background: new;
+}
+
+.st58 {
+  clip-path: url(#SVGID_60_);
+  enable-background: new;
+}
+
+.st59 {
+  clip-path: url(#SVGID_62_);
+  enable-background: new;
+}
+
+.st60 {
+  clip-path: url(#SVGID_64_);
+  enable-background: new;
+}
+
+.st61 {
+  clip-path: url(#SVGID_66_);
+  enable-background: new;
+}
+
+.st62 {
+  clip-path: url(#SVGID_68_);
+  enable-background: new;
+}
+
+.st63 {
+  clip-path: url(#SVGID_70_);
+  enable-background: new;
+}
+
+.st64 {
+  clip-path: url(#SVGID_72_);
+  enable-background: new;
+}
+
+.st65 {
+  clip-path: url(#SVGID_74_);
+  enable-background: new;
+}
+
+.st66 {
+  clip-path: url(#SVGID_76_);
+  enable-background: new;
+}
+
+.st67 {
+  clip-path: url(#SVGID_78_);
+  enable-background: new;
+}
+
+.st68 {
+  clip-path: url(#SVGID_80_);
+  enable-background: new;
+}
+
+.st69 {
+  clip-path: url(#SVGID_82_);
+  enable-background: new;
+}
+
+.st70 {
+  clip-path: url(#SVGID_84_);
+  enable-background: new;
+}
+
+.st71 {
+  clip-path: url(#SVGID_86_);
+  enable-background: new;
+}
+
+.st72 {
+  clip-path: url(#SVGID_88_);
+  enable-background: new;
+}
+
+.st73 {
+  clip-path: url(#SVGID_90_);
+  enable-background: new;
+}
+
+.st74 {
+  clip-path: url(#SVGID_92_);
+  enable-background: new;
+}
+
+.st75 {
+  clip-path: url(#SVGID_94_);
+  enable-background: new;
+}
+
+.st76 {
+  clip-path: url(#SVGID_96_);
+  enable-background: new;
+}
+
+.st77 {
+  clip-path: url(#SVGID_98_);
+  enable-background: new;
+}
+
+.st78 {
+  clip-path: url(#SVGID_100_);
+  enable-background: new;
+}
+
+#Components_1_ {
+  animation-duration: 1.2s;
+  animation-name: animateComponents;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes animateComponents {
+  from {
+    transform: translateX(0) translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(54px) translateY(-38px);
+    opacity: 1;
+  }
+}
+
+.browser svg {
+  width: 100%;
+}
