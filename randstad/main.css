@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.overlay {
+  background: linear-gradient(180deg,rgba(15,25,65,.5) 20%,rgba(15,25,65,0) 60%);
+}
+
+body {
+  font-family: Roboto;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    background-image: url('https://www.randstad.com/s3fs-media/rscom/public/2020-07/home-find-a-job-lowres.jpg');
+    background-size: cover;
+  }
+}

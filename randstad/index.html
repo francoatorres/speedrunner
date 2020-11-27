@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="compiled.css">
+</head>
+<body>
+  <!-- 11:47 finish in 13:34 2 hours! -->
+<div class="hero relative overflow-hidden bg-dark text-white pt-6 px-4 sm:px-6 lg:px-8">
+  <div class="hidden lg:block overlay absolute top-0 left-0 right-0 h-40 w-screen z-10"></div>
+  <div class="max-w-7xl mx-auto">
+    <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 bg-dark lg:bg-transparent lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+      <div class="relative">
+        <nav class="border-b border-gray-700 lg:border-gray-300 pb-6 relative flex items-center justify-between lg:justify-start" aria-label="Global">
+          <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
+            <div class="flex items-center justify-between w-full md:w-auto">
+              <a href="#">
+                <span class="sr-only">Workflow</span>
+                <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" />
+              </a>
+              <div class="-mr-2 flex items-center md:hidden">
+                <button type="button" class="rounded-md p-2 inline-flex items-center justify-center hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" id="main-menu" aria-haspopup="true">
+                  <span class="sr-only">Open main menu</span>
+                  <!-- Heroicon name: menu -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
+            <a href="#" class="font-medium text-gray-300 text-sm hover:underline">Product</a>
+
+            <a href="#" class="font-medium text-gray-300 text-sm hover:underline">Features</a>
+
+            <a href="#" class="font-medium text-gray-300 text-sm hover:underline">Marketplace</a>
+
+            <a href="#" class="font-medium text-gray-300 text-sm hover:underline">Company</a>
+          </div>
+        </nav>
+      </div>
+
+      <!--
+        Mobile menu, show/hide based on menu open state.
+
+        Entering: "duration-150 ease-out"
+          From: "opacity-0 scale-95"
+          To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+          From: "opacity-100 scale-100"
+          To: "opacity-0 scale-95"
+      -->
+      <div class="hidden absolute top-0 inset-x-0 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-md bg-white overflow-hidden h-screen">
+          <div class="px-5 pt-4 flex items-center justify-between">
+            <div>
+              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="" />
+            </div>
+            <div class="-mr-2">
+              <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-blue-500 transition hover:text-blue-600 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <span class="sr-only">Close main menu</span>
+                <!-- Heroicon name: x -->
+                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div role="menu" aria-orientation="vertical" aria-labelledby="main-menu">
+            <div class="px-2 pt-6 pb-3 divide-y" role="none">
+              <a href="#" class="flex px-3 py-5 rounded-md text-base hover:underline text-blue-500 capitalize" role="menuitem">find a job</a>
+
+              <a href="#" class="flex px-3 py-5 rounded-md text-base hover:underline text-blue-500 capitalize" role="menuitem">career advice</a>
+
+              <a href="#" class="flex px-3 py-5 rounded-md text-base hover:underline text-blue-500 capitalize" role="menuitem">HR services</a>
+
+              <a href="#" class="flex px-3 py-5 rounded-md text-base hover:underline text-blue-500 capitalize" role="menuitem">investor relations</a>
+              <a href="#" class="flex px-3 py-5 rounded-md text-base hover:underline text-blue-500 capitalize" role="menuitem">about randstad</a>
+              <a href="#" class="flex px-3 py-5 rounded-md text-base hover:underline text-blue-500 capitalize" role="menuitem">COVID-19</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+        <div class="sm:text-center lg:text-left">
+          <h1 class="text-4xl tracking-tight font-bold sm:text-5xl md:text-6xl">find a job you'll love.</h1>
+          <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 lg:mx-0">We use cutting-edge technology and our flair for matching your profile and desires with the most fitting positions.</p>
+          <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div class="rounded-md shadow">
+              <a href="#" class="w-full flex items-center justify-center px-7 py-2 border-transparent text-base font-medium rounded-md text-white border-white border-2 transition hover:text-blue-500 hover:bg-white md:py-3 md:text-lg md:px-10">find a job</a>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<section class="px-6 md:px-8 py-16 lg:py-28">
+  <div class="max-w-7xl mx-auto">
+    <div class="space-y-6 lg:flex lg:justify-between">
+      <h2 class="text-2xl">share price</h2>
+      <div class="space-y-3">
+        <p class="flex space-x-4 text-xl sm:text-3xl lg:text-4xl items-center">
+          <span>€ 51.34 <span class="text-primary">+ 1.08 (2.14 %)</span></span>
+          <svg class="text-primary w-5 h-5 animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+          </svg>
+        </p>
+        <div class="flex space-x-8 text-lg sm:text-xl lg:text-2xl text-gray-500">
+          <div class="space-y-1">
+            <span class="block">low € 50.42</span>
+            <span class="block">AMS: RAND</span>
+          </div>
+          <div class="space-y-1">
+            <span class="block">high € 51.40</span>
+            <span class="block">27 Nov, 15:30 CET</span>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="lg:self-end table items-center justify-center px-7 py-2 border-transparent text-base font-medium rounded-md border-blue-500 text-blue-500 border-2 transition hover:bg-blue-500 md:py-3 md:text-lg hover:text-white">Investor relations</a>
+    </div>
+  </div>
+</section>
+
+<section class="px-6 md:px-8 py-16 lg:py-28 bg-primary">
+  <div class="max-w-7xl mx-auto text-white">
+    <div class="flex justify-center items-center space-x-9 md:space-x-14">
+      <img class="w-32" src="https://www.randstad.com/themes/custom/bluex/src/assets/img/Quote_OffWhite.svg" />
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-2xl">Randstad was built upon the firm belief that no company can exist if it does not make a positive contribution to society.</h2>
+        <span class="mt-6 block text-black text-2xl"> —Jacques van den Broek </span>
+        <a href="#" class="table mt-6 items-center justify-center px-7 py-4 border-transparent text-base font-medium rounded-md text-white border-white border-2 transition hover:text-blue-500 hover:bg-white md:py-3 md:text-lg md:px-10">read our CEO's message</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="px-6 md:px-8 py-16 lg:py-28 relative overflow-hidden">
+  <img class="absolute top-0 left-0 object-cover w-full h-full" src="https://www.randstad.com/s3fs-media/rscom/public/styles/banner_media_full_desktop/public/2020-10/message-marc-60stories.png?itok=lOLJfJVA" />
+  <div class="bg-black opacity-40 absolute w-full h-full top-0 left-0 bottom-0 right-0"></div>
+  <div class="max-w-7xl mx-auto text-white">
+    <div class="max-w-sm lg:max-w-2xl ml-auto relative z-10 space-y-5">
+      <h2 class="uppercase text-xl md:text-2xl tracking-wide text-primary leading-10">randstad 60 stories</h2>
+      <p class="text-4xl font-medium">share your story and support world bicycle relief.</p>
+      <p class="text-gray-300 leading-8 text-lg">We help people on their journey to a meaningful job. Maybe we even helped you! To celebrate our 60th anniversary we will donate to World Bicycle Relief on your behalf for those who need it most. Simply share your unique story with us.</p>
+      <a href="#" class="table mt-6 items-center justify-center px-7 py-4 border-transparent text-base font-medium rounded-md text-white border-white border-2 transition hover:text-blue-500 hover:bg-white md:py-3 md:text-lg md:px-10">support this goal</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="px-6 md:px-8 py-16 lg:py-28 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="lg:mt-0 flex flex-col items-center lg:flex-row lg:justify-center">
+      <img class="max-w-xl mx-auto bg-primary h-80" src="https://www.randstad.com/s3fs-media/rscom/public/styles/banner_media_desktop/public/2020-10/q3-illustration-transp.png?itok=WuLtW_Mu" />
+      <div class="max-w-xl mx-auto lg:pl-14">
+        <h2 class="mt-8 text-3xl md:text-4xl lg:text-5xl font-medium">Q3 2020 results</h2>
+        <p class="mt-4 text-lg text-gray-600 leading-8">We continue to live in very challenging times given COVID-19, withthe health and safety of our employees, candidates, clients and other stakeholders as key priority. Our CEO Jacques van den Broek takes you through the highlights of this quarter.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="px-6 md:px-8 py-16 lg:py-28 relative overflow-hidden bg-primary text-white">
+  <div class="max-w-7xl mx-auto">
+    <div class="lg:mt-0 flex flex-col items-center lg:flex-row lg:justify-center">
+      <img class="max-w-xl mx-auto bg-primary h-80 order-2" src="https://www.randstad.com/s3fs-media/rscom/public/styles/banner_media_desktop/public/2020-10/q3-illustration-transp.png?itok=WuLtW_Mu" />
+      <div class="max-w-xl mx-auto lg:pl-14">
+        <h2 class="mt-8 text-3xl md:text-4xl lg:text-5xl font-medium">Q3 2020 results</h2>
+        <p class="mt-4 text-lg text-gray-200 leading-8">We continue to live in very challenging times given COVID-19, withthe health and safety of our employees, candidates, clients and other stakeholders as key priority. Our CEO Jacques van den Broek takes you through the highlights of this quarter.</p>
+        <a href="#" class="table mt-10 items-center justify-center px-7 py-4 border-transparent text-base font-medium rounded-md text-white border-white border-2 transition hover:text-blue-500 hover:bg-white md:py-3 md:text-lg md:px-10">support this goal</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="px-6 md:px-8 py-16 lg:py-28 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="lg:mt-0 flex flex-col items-center lg:flex-row lg:justify-center">
+      <img class="max-w-xl mx-auto h-80" src="https://www.randstad.com/s3fs-media/rscom/public/styles/banner_media_desktop/public/2020-09/worldmap-1000x1000.png?itok=io4XkFSB" />
+      <div class="max-w-xl mx-auto lg:pl-14">
+        <h2 class="mt-8 text-3xl md:text-4xl lg:text-5xl font-medium">find randstad in your market.</h2>
+        <p class="mt-4 text-lg text-gray-600 leading-8">Randstad is active in 38 markets, so we're practically always nearby to serve you in your local market. If you want to know if Randstad has a presence in your market, visit our Randstad worldwide page.</p>
+        <a href="#" class="table mt-10 items-center justify-center px-7 py-4 border-transparent text-base font-medium rounded-md hover:text-white border-2 border-blue-500 transition text-blue-500 hover:bg-blue-500 md:py-3 md:text-lg md:px-10">go to overview</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="px-6 md:px-8 py-8 relative overflow-hidden bg-blue-500">
+  <div class="max-w-7xl mx-auto text-white">
+    <div class="mr-auto relative z-10 flex flex-col md:flex-row md:items-center">
+      <img class="self-center w-96 mb-8 md:order-2 md:w-full" src="https://www.randstad.com/s3fs-media/rscom/public/styles/banner_media_desktop/public/2020-05/Online%20toolkit_illustration.png?itok=-r6Z4cNE"></img>
+      <div class="max-w-sm lg:max-w-2xl flex-shrink-0">
+        <h2 class="text-4xl font-medium md:text-4xl lg:text-5xl">digital toolkit for challenging times.</h2>
+        <p class="mt-4 text-gray-100 leading-8 text-lg">Rapidly deployed, free and cost-minimized solutions to help companies and employees get back to work.</p>
+        <a href="#" class="table mt-8 items-center justify-center px-7 py-4 border-transparent text-base font-medium rounded-md text-white border-white border-2 transition hover:text-blue-500 hover:bg-white md:py-3 md:text-lg md:px-10">Get support</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="px-6 md:px-8 py-16 lg:py-28 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="lg:mt-0 flex flex-col items-center lg:flex-row lg:justify-center">
+      <img class="max-w-xl mx-auto bg-primary h-80" src="https://www.randstad.com/s3fs-media/rscom/public/styles/banner_media_desktop/public/2020-10/q3-illustration-transp.png?itok=WuLtW_Mu" />
+      <div class="max-w-xl mx-auto lg:pl-14">
+        <h2 class="mt-8 text-3xl md:text-4xl lg:text-5xl font-medium">touching the work lives.</h2>
+        <p class="mt-4 text-lg text-gray-600 leading-8">Ever since Randstad was founded, we have worked tirelessly to make a tangible impact on society. Three years ago, we underpinned that commitment by setting our ultimate goal: to touch the work lives of 500 million people worldwide by 2030. An ambitious one, for sure, but also one that underpins our commitment to create a sustainable labor market fit for all.</p>
+        <a href="#" class="table mt-10 items-center justify-center px-7 py-4 border-transparent text-base font-medium rounded-md hover:text-white border-2 border-blue-500 transition text-blue-500 hover:bg-blue-500 md:py-3 md:text-lg md:px-10">go to overview</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="px-6 md:px-8 py-8 relative overflow-hidden bg-blue-500">
+  <div class="max-w-7xl mx-auto text-white">
+    <div class="mr-auto relative z-10 flex flex-col md:flex-row md:items-center">
+      <img class="self-center w-96 mb-8 md:order-2 md:w-full" src="https://www.randstad.com/s3fs-media/rscom/public/2020-02/HandHoldingPerson_illustration_UseBackgroundBlue_RGB.svg"></img>
+      <div class="max-w-sm lg:max-w-2xl flex-shrink-0">
+        <h2 class="text-4xl font-medium md:text-4xl lg:text-5xl">sustainability.</h2>
+        <p class="mt-4 text-gray-100 leading-8 text-lg">The 'sustainability @work' report is the first in a series that focuses on the sustainable transformation of the labor market. It is a transformation that many companies and societies are going through today, particularly with the emergence of COVID-19, and it is necessary to improve our quality of life and to secure the future of our planet.</p>
+        <a href="#" class="table mt-8 items-center justify-center px-7 py-4 border-transparent text-base font-medium rounded-md text-white border-white border-2 transition hover:text-blue-500 hover:bg-white md:py-3 md:text-lg md:px-10">Download report now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="px-6 md:px-8 py-16 lg:py-28">
+  <div class="max-w-7xl mx-auto">
+    <div class="space-y-6 lg:flex lg:justify-between">
+      <h2 class="text-2xl">randstad key figures</h2>
+      <div class="space-y-3">
+        <p class="flex space-x-4 text-xl sm:text-3xl lg:text-4xl items-center"><span class="text-primary mr-2">€ 23.7 billion</span>in revenue</p>
+        <p class="flex space-x-4 text-xl sm:text-3xl lg:text-4xl items-center"><span class="text-primary mr-2">€ 23.7 billion</span>avg. corporate employees  </p>
+        <p class="flex space-x-4 text-xl sm:text-3xl lg:text-4xl items-center"><span class="text-primary mr-2">€ 23.7 billion</span>offices in</p>
+        <p class="flex space-x-4 text-xl sm:text-3xl lg:text-4xl items-center"><span class="text-primary mr-2">€ 23.7 billion</span>people employed everyday  </p>
+      </div>
+      <a href="#" class="lg:self-end table items-center justify-center px-7 py-4 border-transparent text-base font-medium rounded-md border-blue-500 text-blue-500 border-2 transition hover:bg-blue-500 md:py-3 md:text-lg hover:text-white">learn more about randstad</a>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="bg-dark text-white">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-no-wrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img class="h-8 w-auto sm:h-10" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" />
+      </a>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <p class="title-font font-medium tracking-widest text-sm mb-3 uppercase text-white">investors</p>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+        </nav>
+      </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <p class="title-font font-medium tracking-widest text-sm mb-3 uppercase text-white">investors</p>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+        </nav>
+      </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <p class="title-font font-medium tracking-widest text-sm mb-3 uppercase text-white">investors</p>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+        </nav>
+      </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <p class="title-font font-medium tracking-widest text-sm mb-3 uppercase text-white">investors</p>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+                    <li>
+            <a class="text-gray-400 hover:text-gray-200 hover:underline">results and reports</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-gray-700 py-5">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© Randstad N.V. 2020</p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start space-x-6">
+        <a class="text-gray-400 p-3">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400 p-3">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400 p-3">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-400 p-3">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
