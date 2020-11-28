@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero {
+  background: linear-gradient(0deg,#7196ff -.45%,#2a5ee8 71.18%)
+}
+
+body {
+  font-family: Roboto;
+}
+
+.cloud {
+}
