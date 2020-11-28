@@ -60,7 +60,6 @@
 <body>
 
 
-    <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="hero text-white relative overflow-hidden">
         <div class="max-w-7xl mx-auto">
             <div class="relative z-10 pb-8 sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
@@ -231,9 +230,9 @@
             </div>
             <div
                 class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                <h2 class="gt title-font sm:text-6xl text-5xl mb-4">Somos un pequeño local
+                <h2 class="gt title-font sm:text-6xl text-5xl mb-14">Somos un pequeño local
                 </h2>
-                <p class="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+                <p class="leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
                     plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot
                     chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
             </div>
@@ -242,14 +241,10 @@
 
     <section class="relative max-w-7xl mx-auto">
         <div class="flex flex-wrap items-center justify-center lg:flex-col md:px-10 mx-auto my-16 px-8 sm:flex-no-wrap">
-            <h2 class="gt text-black text-center self-center title-font sm:text-6xl text-5xl mb-4">Contactanos
+            <h2 class="gt text-black text-center self-center title-font sm:text-6xl text-5xl mb-14">Contactanos
             </h2>
             <div
                 class="bg-gray-300 flex items-end justify-start overflow-hidden p-10 relative rounded-lg sm:mr-10 text-gray-700 w-full">
-                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
-                    marginwidth="0" scrolling="no"
-                    src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-                    style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
                 <div class="bg-white flex flex-wrap items-center py-6 relative">
                     <div class="lg:w-1/2 px-6">
                         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm uppercase">Dirección
@@ -264,29 +259,6 @@
                         <p class="leading-relaxed">123-456-7890</p>
                     </div>
                 </div>
-            </div>
-            <div class="bg-white flex flex-col md:mt-0 md:py-8 mt-8 w-full">
-                <h2 class="text-gray-900 text-lg mb-2 font-medium title-font">Contactanos</h2>
-                <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo
-                    fashion axe</p>
-                <div class="relative mb-4">
-                    <label for="name" class="leading-7 text-sm text-gray-600">Nombre</label>
-                    <input type="text" id="name" name="name"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <div class="relative mb-4">
-                    <label for="email" class="leading-7 text-sm text-gray-600">Correo electrónico</label>
-                    <input type="email" id="email" name="email"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                </div>
-                <div class="relative mb-4">
-                    <label for="message" class="leading-7 text-sm text-gray-600">Mensaje</label>
-                    <textarea id="message" name="message"
-                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                </div>
-                <button
-                    class="border-0 focus:outline-none hero hover:bg-white hover:text-black inline-flex px-6 py-2 rounded self-start text-lg text-white">Button</button>
-
             </div>
         </div>
     </section>
@@ -343,6 +315,22 @@
             </span>
         </div>
     </footer>
+
+    <div id="map"></div>
+
+    <script>
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8,
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?AIzaSyBNYm7a3gU0TfLVV9Cj4_0Pt5vAK8dltoY&callback=initMap"
+        type="text/javascript"></script>
 </body>
 
 </html>
