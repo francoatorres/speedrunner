@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="compiled.css">
+</head>
+
+<body>
+    <script src=""></script>
+    <!-- 16:14 -> 39 -->
+    <div class="modal-fr fixed top-0 right-0 bottom-0 left-0 bg-dark text-white grid place-content-center">
+        <div class="max-w-xl mx-auto space-y-10">
+            <div class="space-y-3">
+                <span class="text-2xl font-medium">¿En qué página te gustaría basarte?</span>
+                <p class="text-gray-300">Sera recreada igualmente, a su gusto.</p>
+            </div>
+            <div>
+                <!-- <span class="text-gray-300 text-sm pb-4 block">Elige tantas opciones como desees</span> -->
+                <div class="space-y-2">
+                    <div
+                        class="bg-black relative rounded-sm p-1.5 hover:bg-primary transition hover:text-black text-gray-300 cursor-pointer flex space-x-4 items-center this">
+                        <span
+                            class="bg-dark w-7 h-7 flex justify-center items-center p-1 rounded-sm text-white text-sm">A</span>
+                        <span>Más visitas a mi local</span>
+                    </div>
+                    <div
+                        class="bg-black rounded-sm p-1.5 hover:bg-primary transition hover:text-black text-gray-300 cursor-pointer flex space-x-4 items-center disabled">
+                        <span
+                            class="bg-dark w-7 h-7 flex justify-center items-center p-1 rounded-sm text-white text-sm">B</span>
+                        <span>Más llamadas</span>
+                    </div>
+                    <div
+                        class="bg-black rounded-sm p-1.5 hover:bg-primary transition hover:text-black text-gray-300 cursor-pointer flex space-x-4 items-center disabled">
+                        <span
+                            class="bg-dark w-7 h-7 flex justify-center items-center p-1 rounded-sm text-white text-sm">C</span>
+                        <span>Más visitas a tu sitio web</span>
+                    </div>
+                </div>
+                <div class="mt-4 cursor-pointer continue text-primary font-medium text-lg flex space-x-5 items-center">
+                    <span class="block">Continuar</span>
+                    <svg class="w-7 h-7 text-primary animate-pulse -right-10" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-4 right-4">
+            <span class="text-gray-400">1 de 2 respondidas</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

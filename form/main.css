@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: Roboto;
+}
+
+.this {
+  background: #00E472;
+  color: black;
+}
+
+.disabled:hover {
+  background: black;
+  color: rgb(209, 213, 219);
+}
