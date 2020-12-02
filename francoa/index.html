@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franco A.</title>
     <link rel="stylesheet" href="compiled.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- 14:11 -->
@@ -18,17 +19,17 @@
       </svg>
     </a>
     <div class="max-w-sm mx-auto md:ml-0 pt-10 lg:pt-0">
-      <h1 class="font-bold text-3xl sm:text-4xl md:text-5xl text-center md:text-left md:leading-headline">
+      <h1 class="main-content font-bold text-3xl sm:text-4xl md:text-5xl text-center md:text-left md:leading-headline">
         <span>Atrae a todos,</span>
         <span>Con una increible Landing Page</span>
       </h1>
-      <span class="table mx-auto mt-3 bg-black text-c-span py-0.5 px-1.5 uppercase tracking-wider text-span md:text-xs md:ml-0">Desde 13 mil pesos</span>
-      <form class="mt-8 space-y-3">
+      <span class="main-content table mx-auto mt-3 bg-black text-c-span py-0.5 px-1.5 uppercase tracking-wider text-span md:text-xs md:ml-0">Desde 13 mil pesos</span>
+      <form class="main-content mt-8 space-y-3">
         <label class="flex flex-col space-y-1">
           <span class="font-bold md:text-lg">Tu Téfono</span>
           <input class="bg-lessdark rounded-sm py-2 px-2 text-sm border-0" placeholder="1158222148" type="text" />
         </label>
-        <button class="space-x-4 rounded-sm cursor-pointer bg-primary text-black font-bold py-2 w-full flex justify-center space-x-2">
+        <button class="main-content space-x-4 rounded-sm cursor-pointer bg-primary text-black font-bold py-2 w-full flex justify-center space-x-2">
           <span>Hablemos</span>
           <svg class="w-5 h-5 animate-ping" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -1026,6 +1027,13 @@
   </div>
 </footer>
 
- 
+<script>
+  var tl2 = gsap.timeline({defaults:{duration: 1.5, delay:1}})
+  var tl3 = gsap.timeline({defaults:{duration: 1.5}})
+
+  tl2.to(".browser", {y: 10, repeat: -1, yoyo: true })
+
+  tl3.from(".main-content", { opacity: 0, y: 40, stagger: .3})
+</script>
 </body>
 </html>
