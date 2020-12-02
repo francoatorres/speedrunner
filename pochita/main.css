@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-bg {
+  -webkit-animation-name: scrollSmall;
+  animation-name: scrollSmall;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scrollSmall {
+  0% {
+    transform: rotate(-13deg) translateY(0);
+  }
+  100% {
+    transform: rotate(-13deg) translateY(-639px);
+  }
+}
+
+body {
+  background-color: #efefef;
+  font-family: Roboto;
+}
